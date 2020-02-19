@@ -1,0 +1,9 @@
+$ workon cv
+$ pip install numpy
+$ pip install opencv-contrib-python
+$ pip install imutils
+$ pip install vptree
+
+$ python3 index_images.py --images haystack --tree vptree.pickle --hashes hashes.pickle
+
+$ python3 search.py --tree vptree.pickle --hashes hashes.pickle --query needle/accordion.jpg
